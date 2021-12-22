@@ -1,32 +1,47 @@
-import pygame
-pygame.init()
+from turtle import Screen
+from snake import Snake
+from food import Food
+from scoreboard import Scoreboard
+import time
 
-screen = pygame.display.set_mode((800, 600))
+screen = Screen()
+screen.setup(width=600, height=600)
+screen.bgcolor("black")
+screen.title("My Snake Game")
+screen.tracer(0)
 
-pygame.display.set_caption("space war")
-surface = pygame.image.load("ufo.png")
-pygame.display.set_icon(surface)
+snake = Snake()
+food = Food()
+scoreboard = Scoreboard()
 
-playerimg = pygame.image.load("arcade-game.png")
-playerX = 370
-playerY = 480
+screen.listen()
+screen.onkey(snake.up, "Up")
+screen.onkey(snake.down, "Down")
+screen.onkey(snake.left, "Left")
+screen.onkey(snake.right, "Right")
 
+game_is_on = True
+while game_is_on:
+    screen.update()
+    time.sleep(0.1)
+    snake.move()
 
-def player(x, y):
-    screen.blit(playerimg, (x, y))
+    # Detect collision with food.
+    if snake.head.distance(food) < 14:
+        food.refresh()
+        snake.extend()
+        scoreboard.increase_score()
 
+    # Detect collision with wall.
+    if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
+        game_is_on = False
+        scoreboard.game_over()
 
-running = True
-while running:
-    screen.fill((0, 0, 0))
-
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
-
-        if event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_LEFT:
-                print
-
-    player(playerX, playerY)
-    pygame.display.update()
+    # Detect collision with tail.
+    for segment in snake.segments:
+        if segment == snake.head:
+            pass
+        elif snake.head.distance(segment) < 10:
+            game_is_on = False
+            scoreboard.game_over()
+screen.exitonclick()
