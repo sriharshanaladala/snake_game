@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a2e4a0a-f0d6-4b06-89bd-3efee54cb7af" name="Changes" comment="Revert &quot;Initial commit creating space wars game by using pygame module&quot;&#10;&#10;This reverts commit c2809868ef6621108fb3f75a23a0bec4fac2e5f5.">
-      <change afterPath="$PROJECT_DIR$/food.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scoreboard.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snake.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoreboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/scoreboard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake.py" beforeDir="false" afterPath="$PROJECT_DIR$/snake.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +25,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -54,14 +53,14 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
-  <component name="RunManager" selected="Python.main.py">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\Sriharsha\PycharmProjects\pythonProject\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -149,7 +148,21 @@
       <option name="project" value="LOCAL" />
       <updated>1640321880702</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Revert &quot;Initial commit creating space wars game by using pygame module&quot;&#10;&#10;This reverts commit c2809868ef6621108fb3f75a23a0bec4fac2e5f5.">
+      <created>1640486108463</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1640486108463</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Revert &quot;Initial commit creating space wars game by using pygame module&quot;&#10;&#10;This reverts commit c2809868ef6621108fb3f75a23a0bec4fac2e5f5.">
+      <created>1640486160929</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1640486160929</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -167,6 +180,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit creating space wars game by using pygame module" />
     <MESSAGE value="importing turtle module" />
+    <MESSAGE value="Revert &quot;Initial commit creating snake using pygame module&quot;&#10;&#10;This reverts commit c2809868ef6621108fb3f75a23a0bec4fac2e5f5." />
     <MESSAGE value="Revert &quot;Initial commit creating space wars game by using pygame module&quot;&#10;&#10;This reverts commit c2809868ef6621108fb3f75a23a0bec4fac2e5f5." />
     <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;Initial commit creating space wars game by using pygame module&quot;&#10;&#10;This reverts commit c2809868ef6621108fb3f75a23a0bec4fac2e5f5." />
   </component>
